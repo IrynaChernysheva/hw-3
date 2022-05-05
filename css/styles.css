@@ -78,27 +78,30 @@ text-decoration: none;
 .header {
     margin-left: auto;
     margin-right: auto;
-    background-color: #ccc;
+    
 }
 .contanier {
-    width: 903px;
     margin-left: auto;
     margin-right: auto;
+    width: 903px;
+    outline: 2px solid tomato;
 
 }
 /* шапка сайта*/
 
 .hero {
-    background-color: #2F303A;;
+    background-color: #2F303A;
+    text-align: center;
 }
 .hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-white-color);
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 .hero-navigtion {
     font-family: inherit;
@@ -117,13 +120,18 @@ text-decoration: none;
     padding-top: 10px;
     padding-bottom: 10px;
     
+    
 }
 .hero-navigtion:focus,
 .hero-navigtion:active 
 .hero-navigtion:hover{
     background-color: var(--brend-color);
 }
-
+.list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
 .attention-to-detail, 
 .punctuality,
 .planning,
@@ -133,11 +141,18 @@ text-decoration: none;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 10px;
+
+    background-color: tomato;
 }
+
 .link-discription {
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--text-color);
+    color: var(--text-color);   
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /*чем мы занимаемся*/
@@ -271,4 +286,5 @@ text-decoration: none;
 .portfolio-list,
 .item {
     list-style-type: none;
+   
 }
