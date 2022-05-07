@@ -40,6 +40,7 @@ text-decoration: none;
     letter-spacing: 0.03em;;
     color:var(--primary-white-color);
     text-decoration: none;
+    
 }
 .link { 
     font-weight: 500;
@@ -86,6 +87,10 @@ text-decoration: none;
     width: 903px;
     outline: 2px solid tomato;
 
+}
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 /* шапка сайта*/
 
@@ -144,15 +149,17 @@ text-decoration: none;
     margin-top: 0px;
     margin-bottom: 10px;
 
-    background-color: tomato;
 }
 
 .link-discription {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-color);   
-    margin-top: 0px;
     margin-bottom: 0px;
+}
+.peculiarities,
+.what-are-we-doing-pading {
+    padding-bottom: 94px;
 }
 
 /*чем мы занимаемся*/
@@ -162,11 +169,14 @@ text-decoration: none;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 50px;
     
 }
 .going {
     background: url;
     mix-blend-mode: normal;
+
 }
 
 /*наша команда*/
@@ -176,6 +186,8 @@ text-decoration: none;
     line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 .member-title {
     font-weight: 500;
@@ -183,6 +195,8 @@ text-decoration: none;
     line-height: 1.19;
     letter-spacing: 0.03em;    
     color: var(--title-text-color)1;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 .member-position {
     font-size: 16px;
@@ -196,6 +210,10 @@ text-decoration: none;
 .member-item {
     background-color: #ffffff;
 }
+.member-list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 /*подвал*/
 .footer {
@@ -206,6 +224,8 @@ text-decoration: none;
     letter-spacing: 0.03em;   
     color: var(--primary-white-color);
     font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .group-mailto-footer,
 .group-tel-footer {
@@ -214,6 +234,8 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: #ffffff99;
     text-decoration: none;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .group-mailto-footer:hover,
 .group-mailto-footer:focus,
@@ -264,18 +286,28 @@ text-decoration: none;
     color: var(--primary-white-color);
     
 }
+.filter-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .portfolio-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--title-text-color);
+    margin-top: 0px;
+    margin-bottom: 4px;
 }
 .portfolio-position {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--text-color);
+}
+.portfolio {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .link:focus,
 .link:hover {
