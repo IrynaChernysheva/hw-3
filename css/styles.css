@@ -12,8 +12,44 @@ font-size: 14px;
 text-decoration: none;
 }
 
+h1,
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+img {
+    display: block;
+}
+
+.contanier {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    outline: 1px solid tomato;
+
+}
+.list {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    
+}
 
 /*верхняя линия*/
+.header-contanier {
+    display: flex;
+    align-items: center;
+}
+
 .logo-blue {
     font-family: 'Raleway';
     font-weight: 700;
@@ -31,6 +67,7 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: #000000;
     text-decoration: none;
+    margin-right: 93px;
 }
 .logo-footer {
     font-family: 'Raleway';
@@ -42,32 +79,77 @@ text-decoration: none;
     text-decoration: none;
     
 }
+
+.navigtion-list {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+   
+}
+.navigtion-item {
+    display: block;
+    margin-right: 50px;
+    list-style-type: none;   
+}
+
+.navigtion-item:last-child {
+    margin-right: 0px;
+}
 .link { 
+    display: block;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--title-text-color);
-    text-decoration: none; 
-    
+    text-decoration: none;  
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .link.active{ 
     color: var(--brend-color);
 }
 
-.group-mailto {   
+.link:hover, 
+.link:focus {
+    color: var(--brend-color);
+}
+
+.header-gruop {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header-gruop-list {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.group-mailto {  
+    display: block;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
+    margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .group-tel {
+    display: block;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .group-mailto:hover,
@@ -76,22 +158,7 @@ text-decoration: none;
 .group-tel:focus {
     color: var(--brend-color);
 }
-.header {
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-.contanier {
-    margin-left: auto;
-    margin-right: auto;
-    width: 903px;
-    outline: 2px solid tomato;
 
-}
-p {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
 /* шапка сайта*/
 
 .hero {
@@ -109,11 +176,11 @@ p {
     margin-bottom: 30px;
 }
 .hero-navigtion {
+    font-family: 'Roboto';
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;   
@@ -132,11 +199,7 @@ p {
 .hero-navigtion:hover{
     background-color: var(--brend-color);
 }
-.list {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
-}
+
 .attention-to-detail, 
 .punctuality,
 .planning,
@@ -176,6 +239,9 @@ p {
 .going {
     background: url;
     mix-blend-mode: normal;
+    display: block;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -214,10 +280,17 @@ p {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+.member-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /*подвал*/
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .link-address {
     line-height: 1.71;
@@ -260,7 +333,7 @@ p {
     padding-top: 6px;
     padding-bottom: 6px;
     min-width: 103px;
-    height: 38px;
+    min-height: 38px;
 }
 .filter-btn-active {
     font-weight: 500;
@@ -278,7 +351,7 @@ p {
     padding-top: 6px;
     padding-bottom: 6px;
     min-width: 73px;
-    height: 38px;
+    min-height: 38px;
 }
 .filter-btn:active,
 .filter-btn:focus {
@@ -287,8 +360,11 @@ p {
     
 }
 .filter-title {
+    display: flex;
     margin-top: 0;
     margin-bottom: 0;
+    margin-right: 8px;
+    padding-top: 94px;
 }
 .portfolio-title {
     font-weight: 700;
@@ -309,6 +385,13 @@ p {
     margin-top: 0;
     margin-bottom: 0;
 }
+.portfolio-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+
+}
 .link:focus,
 .link:hover {
     color: var(--brend-color);
@@ -316,7 +399,10 @@ p {
 .list,
 .member-item,
 .portfolio-list,
-.item {
+.item,
+.navigtion-item,
+.header-gruop-list,
+.filter-item {
     list-style-type: none;
    
 }

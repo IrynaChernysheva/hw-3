@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <!--Normalize-->    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"/>    
     <!--Progect styles-->    
     <link rel="stylesheet" href="./css/styles.css">
@@ -18,40 +19,42 @@
 <body>
     <!--верхняя линяя-->
     <header class="header">
-       <div class="contanier">
-        <a class="logo-blue" href="./index.html">Web<span class="logo-header" lang="en">Stydio</span>
-        </a>
-        <nav class="navigtion">
-            <ul class="list">
-                <li class="item"> <a class="link active" href="./index.html">Студия</a>  
+       <div class="contanier header-contanier">
+         <a class="logo-blue" href="./index.html">Web<span class="logo-header" lang="en">Stydio</span>
+         </a>
+         <nav class="navigtion">
+            <ul class="navigtion-list">
+                <li class="navigtion-item"> <a class="link active" href="./index.html">Студия</a>  
                 </li>
-                <li class="item"> <a class="link" href="./portfolio.html">Портфолио</a> 
+                <li class="navigtion-item"> <a class="link" href="./portfolio.html">Портфолио</a> 
                 </li>
-                <li class="item"> <a class="link" href="">Контакты</a> 
+                <li class="navigtion-item"> <a class="link" href="">Контакты</a> 
                 </li>
             </ul>
-        </nav>
-        <div class="header-gruop">
-            <ul class="list">
+         </nav>
+         <div class="header-gruop">
+            <ul class="header-gruop-list">
                <li class="group"> <a class="group-mailto" href="mailto:info@devstudio.com">info@devstudio.com</a>
                </li>
                <li class="group"> <a class="group-tel" href="tel:380961111111">+38 096 111 11 11</a>
                </li>
             </ul>
-        </div>
+         </div>
         </div>
     </header>
-    <!--шапка сайта-->
+    
     <main>
-        <div class="">
+    <!--шапка сайта-->
         <section class="hero">
+         <div class="contanier">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button class="hero-navigtion" type="button">Заказать услугу</button>
+         </div>
         </section>
-        </div>
+        
     <!--особенности-->
-        <section class="peculiarities">
-        <div class="contanier">  
+        <section class="peculiarities section">
+          <div class="contanier">  
             <h2 class="peculiarities-title" hidden>Особенности</h2>
             <ul class="list">
                 <li class="item">
@@ -71,11 +74,11 @@
                     <p class="link-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
-        </div>
+          </div>
         </section>
     <!--чем мы занимаемся-->
-        <section class="what-are-we-doing-pading">
-            <div class="contanier">
+        <section class="what-are-we-doing-pading section">
+          <div class="contanier">
                 <h2 class="what-are-we-doing">Чем мы занимаемся</h2>    
             <ul class="list">
                 <li class="going">
@@ -88,11 +91,11 @@
                   <img src="./images/main/class/box-3.jpg" alt="работа с палитрой" width="370" height="294">
                 </li>
             </ul>
-            </div>
+         </div>
         </section>     
     <!--наша команда-->
-        <section class="team">
-            <div class="contanier">
+        <section class="team section">
+          <div class="contanier">
             <h2 class="our-team">Наша команда</h2>
             <ul class="member-list">
                 <li class="member-item">
@@ -124,15 +127,15 @@
                     </div>
                 </li>
             </ul>
-            </div>
+         </div>
         </section>
     </main>
     <!--подвал-->
     <footer class="footer">
         <div class="contanier">
-        <a class="logo-blue" href="./index.html">Web<span class="logo-footer" lang="en">Stydio</span>
-        </a>
-        <div class="footer-navigtion">       
+         <a class="logo-blue" href="./index.html">Web<span class="logo-footer" lang="en">Stydio</span>
+         </a>
+         <div class="footer-navigtion">       
             <address class="link"> 
                 <a class="link-address">г. Киев, пр-т Леси Украинки, 26</a>
                 <ul class="list">
@@ -142,10 +145,9 @@
                     </li>
                 </ul>
             </address>
-        </div>
+         </div>
         </div>
     </footer>
-    
-    
+       
 </body>
 </html>
